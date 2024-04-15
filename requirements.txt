@@ -1,0 +1,9 @@
+ensure==1.0.4
+numpy==1.26.4
+opencv_python==4.9.0.80
+opencv_python_headless==4.8.0.74
+tqdm==4.66.2
+'transformers[torch]'
+timm
+gdown
+torch
