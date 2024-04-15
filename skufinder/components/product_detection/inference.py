@@ -54,7 +54,7 @@ class DetrModel:
         # print(type(inputs))
         outputs = self.model(**inputs)
 
-        target_sizes = torch.tensor([image.shape[:2][::-1]])
+        target_sizes = torch.tensor([image.shape[:2]])
         results = self.processor.post_process_object_detection(outputs, target_sizes=target_sizes, threshold=thres)[0]
         
         results["scores"]=results["scores"].cpu().detach().numpy()

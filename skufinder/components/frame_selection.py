@@ -26,7 +26,7 @@ def get_frames(video_path:str,frame_interval=10) -> np.ndarray:
     logger.info(f"Extracting every {frame_interval}th frame...")
 
     frames = []
-    for i in tqdm(range(total_frames)):
+    for i in range(total_frames):
         
         ret, frame = video_obj.read()
         
@@ -40,6 +40,7 @@ def get_frames(video_path:str,frame_interval=10) -> np.ndarray:
             
     video_obj.release()
     frames = np.array(frames)
+    logger.info(f"Extracted {len(frames)} frames")
 
     return frames
 

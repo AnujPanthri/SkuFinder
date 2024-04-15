@@ -27,6 +27,8 @@
     
 - [ ] **Crop Selection (Part 3)**
     - [ ] filter_crops : function to filter out bad/unusable/blurry/very low res crops
+    - [x] very low res crops
+    - [ ] blurry crops
 
 - [ ] **Product Recognition (Part 4)**
     - [ ] Training
